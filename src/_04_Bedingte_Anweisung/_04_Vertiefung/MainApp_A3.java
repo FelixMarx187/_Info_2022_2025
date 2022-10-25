@@ -63,6 +63,10 @@ public class MainApp_A3 {
                 System.out.println("Das macht dann bitte " + preis + " €");
 
 
+        } else if (antwort.toLowerCase().equals("nein")) {
+            System.out.println("Schade bis zum nächsten mal");
+        } else {
+            System.out.println("Entschuldigung ich habe sie leider nicht verstanden!");
         }
     }
 }

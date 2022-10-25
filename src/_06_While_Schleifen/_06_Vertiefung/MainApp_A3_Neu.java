@@ -10,6 +10,7 @@ public class MainApp_A3_Neu {
         System.out.println("Spieleverwaltung:");
         System.out.println("---------------------------------");
 
+        boolean run = true;
         System.out.println("Benutzername: ");
         String login = scanner.nextLine();
 
@@ -27,9 +28,16 @@ public class MainApp_A3_Neu {
                 String entwickler = scanner.nextLine();
 
                 int counter1 = 0;
-
                 System.out.println("Preis:");
-                double preis = scanner.nextDouble();
+                if (!scanner.hasNextDouble()) {
+                    while (counter1 < 4); {
+                        System.out.println("Fehler: Eingabe Wiederholen:");
+                        double preis = scanner.nextDouble();
+                    }
+                } else {
+                    scanner.nextDouble();
+                }
+
             }
         }
     }

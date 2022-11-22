@@ -14,6 +14,5 @@ public class MainApp_2_7 {
             arr[i] = random.nextInt(-50,50);
             i++;
         }
-        System.out.println(Arrays.toString(arr));
     }
 }

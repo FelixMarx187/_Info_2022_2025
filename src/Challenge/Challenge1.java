@@ -7,26 +7,27 @@ public class Challenge1 {
     public static void main(String[] args) {
 
         Random random = new Random();
-        int[] arr = new int[20];
+        int[] array = new int[20];
         int i = 0;
-        while (i < arr.length) {
-            arr[i] = random.nextInt(0, 2);
+        while (i < array.length) {
+            array[i] = random.nextInt(0, 2);
             i++;
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(array));
 
-        int counter = 0;
         int max = 0;
-        int counterwhile = 0;
-        while (counterwhile > arr.length) {
-            if (arr[counterwhile] == 1) {
-                counter++;
-                if (max < counter) {
-                    max = counter;
+        int count = 0;
+        int counter = 0;
+        while (counter < array.length) {
+            if (array[counter] == 1) {
+                count++;
+                if (count > max) {
+                    max = count;
                 }
+            }else {
+                count = 0;
             }
-            counter = 0;
-            counterwhile++;
+            counter++;
         }
         System.out.println(max);
     }

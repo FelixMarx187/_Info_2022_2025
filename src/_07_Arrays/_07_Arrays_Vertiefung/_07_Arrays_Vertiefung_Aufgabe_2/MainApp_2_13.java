@@ -16,6 +16,7 @@ public class MainApp_2_13 {
             System.exit(0);
         } else {
             index = scanner.nextInt();
+            scanner.nextLine();
         }
         int[] arr = new int[100];
         int i = 0;
@@ -38,6 +39,7 @@ public class MainApp_2_13 {
             if (arr[counter] == arr[index]) {
                 System.out.println("Position: " + counter);
             }
+            counter++;
         }
     }
 }

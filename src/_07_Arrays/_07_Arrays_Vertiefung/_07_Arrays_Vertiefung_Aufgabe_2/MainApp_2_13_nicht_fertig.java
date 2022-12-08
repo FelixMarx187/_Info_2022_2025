@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class MainApp_2_13 {
+public class MainApp_2_13_nicht_fertig {
     public static void main(String[] args) {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
@@ -16,6 +16,7 @@ public class MainApp_2_13 {
             System.exit(0);
         } else {
             index = scanner.nextInt();
+            scanner.nextLine();
         }
         int[] arr = new int[100];
         int i = 0;
@@ -30,14 +31,11 @@ public class MainApp_2_13 {
         System.out.println("-----------------------------------------------");
 
         //-----------------------------------
-
-        System.out.println("Deine Zahl kommt an den Folgenden stellen Vor:");
         int counter = 0;
-        int position = 0;
+        int indexpos = 0;
         while (counter < arr.length) {
-            if (arr[counter] == arr[index]) {
-                System.out.println("Position: " + counter);
-            }
+
         }
+        //nicht Fertig
     }
 }

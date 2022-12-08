@@ -1,6 +1,6 @@
 package _07_Arrays._07_Arrays_Vertiefung._07_Arrays_Vertiefung_Aufgabe_2;
 
-public class MainApp_2_12 {
+public class MainApp_2_12_nicht_fertig {
     public static void main(String[] args) {
 
     }

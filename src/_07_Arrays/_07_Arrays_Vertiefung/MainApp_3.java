@@ -23,5 +23,6 @@ public class MainApp_3 {
         while (j < primzahlen.length) {
             j++;
         }
+        System.out.println();
     }
 }

@@ -9,30 +9,19 @@ public class MainApp_3 {
         System.out.println("Maximum");
         int max = scanner.nextInt();
 
-        boolean[] primzahlen = new boolean[max];
+        int[] primzahlen = new int[max];
 
-        int i = 2;
+        int i = 1;
         while (i < primzahlen.length) {
-            primzahlen[i] = true;
+            primzahlen[i] = i + 1;
             i++;
         }
+
         System.out.println(Arrays.toString(primzahlen));
-
-        while (i < primzahlen.length) {
-            if (primzahlen[i]) {
-                int j = 2;
-                while (i * j < primzahlen.length) {
-                    primzahlen[i * j] = false;
-                    j++;
-                }
-            }
-        }
-
-        while (i < primzahlen.length) {
-            if (primzahlen[i]) {
-                System.out.println(i);
-            }
-            i++;
+        System.out.println("----------------------------");
+        int j = 1;
+        while (j < primzahlen.length) {
+            j++;
         }
     }
 }

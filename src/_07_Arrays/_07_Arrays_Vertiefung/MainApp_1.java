@@ -17,5 +17,6 @@ public class MainApp_1 {
         String x7 = personen[1];
         int x8 = personen.length;
         String[] x9 = personen;
+        System.out.println();
     }
 }

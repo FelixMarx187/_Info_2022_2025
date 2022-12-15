@@ -1,17 +1,15 @@
-package _07_Arrays._07_Arrays_Vertiefung;
+package _01_Arbeit;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class MainApp_3 {
+public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("MAXIMUM:");
         int max = scanner.nextInt();
-        int[] arr = new  int[max];
         int i = 2;
         boolean weiter = false;
-        while (i <= arr.length) {
+        while (i <= max) {
             int i1 = 2;
             while (i1 < i) {
                 if (i % i1 == 0) {

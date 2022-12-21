@@ -4,19 +4,21 @@ public class MainApp_A4 {
     public static void main(String[] args) {
 
         int x = 2;
-        String b = "Falsch";
+        boolean weiter = false;
         while (x <= 1000) {
             int y = 2;
             while (y < x) {
                 if (x % y == 0) {
-                    b = "gefunden";
-                    y++;
+                    weiter = true;
+                    break;
                 }
-                if (b == "nix gefunden") {
-                    System.out.println(x);
-                    b = "Falsch";
-                }
+                y++;
             }
+            if (!weiter) {
+                System.out.println(x);
+            }
+            weiter = false;
+            x++;
         }
     }
 }

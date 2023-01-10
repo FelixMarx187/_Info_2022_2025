@@ -29,6 +29,8 @@ public class MainApp_2_10 {
                 if (arr[counter] == arr[counter2]) {
                     System.out.println(arr[counter]);
                     counter2++;
+                } else {
+                    counter2++;
                 }
             }
             counter++;

@@ -23,12 +23,5 @@ public class MainApp_A3_17_4 {
                 {5.6, -5, 15.1, 71.3, 23.2} //12
 
         };
-
-        int counter = 0;
-        System.out.println("Ein kleines Spiel:");
-        while (counter < 1000) {
-
-
-        }
     }
 }

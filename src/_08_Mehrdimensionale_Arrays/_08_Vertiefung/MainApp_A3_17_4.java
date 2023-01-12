@@ -1,5 +1,6 @@
 package _08_Mehrdimensionale_Arrays._08_Vertiefung;
 
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -7,6 +8,16 @@ public class MainApp_A3_17_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
+
+        /*
+        Der Benutzer zieht eine zufällige Karte aus dem Deck.
+        Der Wert der Karte wird dem Benutzer als Punkte gutgeschrieben.
+        Der Benutzer kann jetzt nacheinander so lange eine weitere zufällige Karte aus dem Deck ziehen, bis er…
+        21 Punkte und damit gewonnen hat.
+        mehr als 21 Punkte und damit verloren hat.
+        entscheidet, dass er aufhört.
+        Der Benutzer kann dieses Spiel natürlich beliebig oft wiederholen.
+         */
 
         double[][] wetter = {
                 {3.1, -2.3, 12.2, 100.4, 34.3}, //01
@@ -23,6 +34,35 @@ public class MainApp_A3_17_4 {
                 {5.6, -5, 15.1, 71.3, 23.2} //12
         };
 
+        boolean run = true;
 
+        while (run) {
+            System.out.println("17 + 4");
+            System.out.println("----------------------");
+            System.out.println("Hit [1] | Stand [2]");
+
+            int counter = 0;
+            double max;
+            double maxinput;
+            while (counter < 1000) {
+                System.out.println("---------------------");
+                System.out.println("Bitte Zahl eingeben:");
+                int input = scanner.nextInt();
+
+                if (input == 1) {
+                    int idx1 = random.nextInt(0,12);
+                    int idx2 = random.nextInt(0,5);
+
+                    System.out.println("---------------------");
+                    System.out.println("Deine Zahl [" + wetter[idx1][idx2] + "]");
+                    System.out.println("---------------------");
+                    max = 0;
+                    double ergebnis = wetter[idx1][idx2] + max;
+                    System.out.println("Gesamt Ergebnis: " );
+
+                }
+
+            }
+        }
     }
 }

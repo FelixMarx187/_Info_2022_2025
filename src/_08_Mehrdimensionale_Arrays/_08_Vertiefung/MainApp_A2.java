@@ -1,7 +1,5 @@
 package _08_Mehrdimensionale_Arrays._08_Vertiefung;
 
-import javax.sound.midi.MidiFileFormat;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainApp_A2 {

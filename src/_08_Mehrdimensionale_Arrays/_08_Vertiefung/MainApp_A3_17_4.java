@@ -20,20 +20,31 @@ public class MainApp_A3_17_4 {
          */
 
         String[] farben = {"Herz", "Karo", "Pik", "Kreuz"};
-        String[] bilder = {"7","8","9","10","Bauer","Dame","König"};
+        String[] bilder = {"7","8","9","10","Bauer","Dame","König","As"};
 
         boolean run = true;
         while (run) {
             System.out.println("------------------------------------");
             System.out.println("17 + 4");
             System.out.println("------------------------------------");
-            System.out.println("Hit [1] | Stand [2]");
+            System.out.println("Hit [1]");
             int antwort = scanner.nextInt();
             if (antwort == 1) {
                 int farbrand = random.nextInt(0,4);
-                int bilderrand = random.nextInt(0,7);
+                int bilderrand = random.nextInt(0,8);
                 System.out.println("Zahl: " + farben[farbrand] + " " + bilder[bilderrand]);
+                
+                int value;
+                if(bilder[bilderrand].equals("Bauer") || bilder[bilderrand].equals("Dame") || bilder[bilderrand].equals("König")) {
+                    value = 10;
+                } else if (bilder[bilderrand].equals("As")) {
+                    value = 11;
+                } else {
+                    value = Integer.parseInt(bilder[bilderrand]);
+                }
+                System.out.println("Value: " + value);
             }
+
         }
     }
 }

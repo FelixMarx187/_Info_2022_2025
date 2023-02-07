@@ -10,8 +10,8 @@ public class MainApp_A2 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] personen = {"Felix", "Jocelin", "Jasper", "Cedric", "Joel","Weronika","Semiha","Domenik 1", "Domenik 2"};
-        String[] verben = {"plätschert", "geht", "hustet"};
+        String[] personen = {"Felix", "Jocelin", "Jasper", "Cedric", "Joel","Weronika","Semiha","Domenik 1", "Domenik 2","Kastje","Tom"};
+        String[] verben = {"fliegt", "geht", "hustet"};
         String[] adverben = {"lustig", "bunt", "schnell"};
         String[] preapositionen = {"in", "auf", "unter"};
         String[] Artikel = {"der", "die", "das"};

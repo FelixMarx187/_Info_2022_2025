@@ -1,6 +1,6 @@
 package _10_For_Schleifen._10_For_Schleifen_Vertiefung;
 
-public class MainApp_3 {
+public class MainApp_A3 {
     /*
     es mit einem Großbuchstaben anfing,
     danach im Wechsel immer eine Zahl und ein Kleinbuchstabe kam,

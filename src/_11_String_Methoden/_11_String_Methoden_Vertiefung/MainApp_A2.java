@@ -18,6 +18,14 @@ public class MainApp_A2 {
                 compareto();
             case 4:
                 contains();
+            case 5:
+                endsWith();
+            case 6:
+                equalss();
+            case 7:
+                indexOf();
+            case 8:
+                indexOf2();
         }
     }
 
@@ -31,6 +39,7 @@ public class MainApp_A2 {
         System.out.println(input + " " + satz);
 
     }
+
     public static void CharAt() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den Character (Buchstaben, Ziffern, Leerzeichen, Sonderzeichen, …) an der Position index im String an.");
@@ -41,6 +50,7 @@ public class MainApp_A2 {
         char charat = input.charAt(input2);
         System.out.println(charat);
     }
+
     public static void compareto() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("= 0, falls str1 und str2 gleich sind\n" +
@@ -54,6 +64,7 @@ public class MainApp_A2 {
         int compare = input.compareTo(input2);
         System.out.println(compare);
     }
+
     public static void contains() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("true, falls str im String enthalten ist, sonst false.");
@@ -64,20 +75,51 @@ public class MainApp_A2 {
         boolean contains = input.contains(input2);
         System.out.println(contains);
     }
-    public static void endsWith() {
 
+    public static void endsWith() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Gibt den booleschen Wert true zurück, falls der String mit der im Parameter str übergebenen Zeichenkette endet. Ansonsten wird false zurückgegeben.");
+        System.out.println("Gib einen Satz ein:");
+        String input = scanner.nextLine();
+        System.out.println("Gib an mit welchem Buchstaben das Array enden soll:");
+        String input2 = scanner.nextLine();
+        boolean endswith = input.endsWith(input2);
+        System.out.println(endswith);
     }
 
     public static void equalss() {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("true, wenn str1 und str2 gleich sind, sonst false");
+        System.out.println("Gib einen Satz ein:");
+        String input = scanner.nextLine();
+        System.out.println("Gib einen Satz ein:");
+        String input2 = scanner.nextLine();
+        boolean equals = input.equals(input2);
+        System.out.println(equals);
     }
 
     public static void indexOf() {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Gibt die erste Position des Characters c im String an. Gibt es den Character nicht, liefert die Methode -1 zurück.");
+        System.out.println("Gib einen Satz ein:");
+        String input = scanner.nextLine();
+        System.out.println("Gib einen Buchstaben an:");
+        String input2 = scanner.nextLine();
+        int indexof = input.indexOf(input2);
+        System.out.println(indexof);
     }
 
     public static void indexOf2() {
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Gibt die erste Position des Characters c im String an, die größer ist als index.");
+        System.out.println("Gib einen Satz ein:");
+        String input = scanner.nextLine();
+        System.out.println("Gebe einen Char an:");
+        String c = scanner.nextLine();
+        System.out.println("Gib einen Index an:");
+        int index = scanner.nextInt();
+        int indexof = input.indexOf(c,index);
+        System.out.println(indexof);
     }
 
     public static void isEmpty() {

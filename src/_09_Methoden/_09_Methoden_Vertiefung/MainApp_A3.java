@@ -13,7 +13,7 @@ public class MainApp_A3 {
         int value = 0;
         String[] bilder = {"7", "8", "9", "10", "Bauer", "Dame", "König", "Ass"};
         Random random = new Random();
-        if (getRandomValueFromArray(bilder, random).equals("Bauer") || getRandomValueFromArray(bilder, random).equals("Dame") || getRandomValueFromArray(bilder, random).equals("König") || getRandomValueFromArray(bilder, random).equals("10")) {
+        if (getRandomValueFromArray(bilder, random).equals("Bauer") || getRandomValueFromArray(bilder, random).equals("Dame") || getRandomValueFromArray(bilder, random).equals("König")) {
             value = 10;
         } else if (getRandomValueFromArray(bilder, random).equals("Ass")) {
             value = 11;
@@ -23,6 +23,8 @@ public class MainApp_A3 {
             value = 8;
         } else if (getRandomValueFromArray(bilder, random).equals("9")) {
             value = 9;
+        } else if (getRandomValueFromArray(bilder,random).equals("10")) {
+            value = 10;
         }
         return value;
 

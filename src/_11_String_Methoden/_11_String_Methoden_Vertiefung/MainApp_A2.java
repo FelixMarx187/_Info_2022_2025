@@ -51,7 +51,6 @@ public class MainApp_A2 {
                 touppercase();
         }
     }
-
     public static void contactoperator() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Der Contact-Operator verbindet Zwei Strings miteinander.");
@@ -62,7 +61,6 @@ public class MainApp_A2 {
         System.out.println(input + " " + satz);
 
     }
-
     public static void CharAt() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den Character (Buchstaben, Ziffern, Leerzeichen, Sonderzeichen, …) an der Position index im String an.");
@@ -73,7 +71,6 @@ public class MainApp_A2 {
         char charat = input.charAt(input2);
         System.out.println(charat);
     }
-
     public static void compareto() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("= 0, falls str1 und str2 gleich sind\n" +
@@ -87,7 +84,6 @@ public class MainApp_A2 {
         int compare = input.compareTo(input2);
         System.out.println(compare);
     }
-
     public static void contains() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("true, falls str im String enthalten ist, sonst false.");
@@ -98,7 +94,6 @@ public class MainApp_A2 {
         boolean contains = input.contains(input2);
         System.out.println(contains);
     }
-
     public static void endsWith() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den booleschen Wert true zurück, falls der String mit der im Parameter str übergebenen Zeichenkette endet. Ansonsten wird false zurückgegeben.");
@@ -109,7 +104,6 @@ public class MainApp_A2 {
         boolean endswith = input.endsWith(input2);
         System.out.println(endswith);
     }
-
     public static void equalss() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("true, wenn str1 und str2 gleich sind, sonst false");
@@ -120,7 +114,6 @@ public class MainApp_A2 {
         boolean equals = input.equals(input2);
         System.out.println(equals);
     }
-
     public static void indexOf() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt die erste Position des Characters c im String an. Gibt es den Character nicht, liefert die Methode -1 zurück.");
@@ -131,7 +124,6 @@ public class MainApp_A2 {
         int indexof = input.indexOf(input2);
         System.out.println(indexof);
     }
-
     public static void indexOf2() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt die erste Position des Characters c im String an, die größer ist als index.");
@@ -144,7 +136,6 @@ public class MainApp_A2 {
         int indexof = input.indexOf(c,index);
         System.out.println(indexof);
     }
-
     public static void isEmpty() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("true, wenn der String eine Länge von 0 hat, sonst false.");
@@ -153,7 +144,6 @@ public class MainApp_A2 {
         boolean empty = input.isEmpty();
         System.out.println(empty);
     }
-
     public static void join() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt einen String zurück, in dem alle Elemente des Arrays mit dem Delimiter (= Begrenzer) verbunden wurden.");
@@ -172,7 +162,6 @@ public class MainApp_A2 {
         int lenght = input.length();
         System.out.println(lenght);
     }
-
     public static void replace() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt einen String zurück, bei dem alle Vorkommen von oldChar durch newChar ersetzt wurden.");
@@ -185,7 +174,6 @@ public class MainApp_A2 {
         String replace = input.replace(input2,input3);
         System.out.println(replace);
     }
-
     public static void split() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Teilt den String überall da, wo der Delimiter gefunden wird, und gibt die einzelnen Strings in einem Array zurück.");
@@ -196,7 +184,6 @@ public class MainApp_A2 {
             System.out.println(wort);
         }
     }
-
     public static void startsWith() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den booleschen Wert true zurück, falls der String mit der im Parameter str übergebenen Zeichenkette beginnt. Ansonsten wird false zurückgegeben.");
@@ -207,7 +194,6 @@ public class MainApp_A2 {
         boolean starswith = input.startsWith(input2);
         System.out.println(starswith);
     }
-
     public static void strip() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt einen String zurück, bei dem alle Leerzeichen am Anfang und am Ende des Strings entfernt wurden. Leerzeichen in der Mitte bleiben erhalten. Der String selbst wird nicht verändert.");
@@ -216,7 +202,6 @@ public class MainApp_A2 {
         String strip = input.strip();
         System.out.println(strip);
     }
-
     public static void substring() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt einen String zurück, bei dem alle Leerzeichen am Anfang und am Ende des Strings entfernt wurden. Leerzeichen in der Mitte bleiben erhalten. Der String selbst wird nicht verändert.");
@@ -227,7 +212,6 @@ public class MainApp_A2 {
         String substring = input.substring(indx);
         System.out.println(substring);
     }
-
     public static void substring2() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den Teilstring der bei Position from-idx beginnt und vor Position to-idx endet.");
@@ -240,7 +224,6 @@ public class MainApp_A2 {
         String substring = input.substring(idx,idx2);
         System.out.println(substring);
     }
-
     public static void tolowercase() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den String in Kleinbuchstaben zurück – der String selbst wird nicht verändert.");
@@ -249,7 +232,6 @@ public class MainApp_A2 {
         String lower = input.toLowerCase();
         System.out.println(lower);
     }
-
     public static void touppercase() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gibt den String in Großbuchstaben zurück – der String selbst wird nicht verändert.");
@@ -259,4 +241,3 @@ public class MainApp_A2 {
         System.out.println(upper);
     }
 }
-

@@ -32,17 +32,10 @@ public class MainApp_A4 {
         System.out.println("Um wie viele Stellen soll die Verschluesselung verschoben werden?: ");
         int verschiebung = new Scanner(System.in).nextInt();
         System.out.println("Ohne Verschluesselung: " + satz);
-        String hallo = "";
-        for (int i = 0; i < satz.length(); i++) {
-            char c = satz.charAt(i);
-            for (char c2 = 'A'; c2 <= 'z'; c2++) {
-                if (c == c2) {
-                    char verschlueeselung = (char) (c2 +verschiebung);
-                    hallo = satz.replace(c2, verschlueeselung);
-                }
-            }
-        }
-        System.out.println("Mit Verschluesselung: " + hallo);
+        char[] satzfertig = new char[satz.length()];
+        String satz2 = null;
+
+        System.out.println("Mit Verschluesselung: " + satz2);
     }
 
     public static void main(String[] args) {

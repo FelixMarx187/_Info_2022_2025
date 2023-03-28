@@ -32,10 +32,48 @@ public class MainApp_A4 {
         System.out.println("Um wie viele Stellen soll die Verschluesselung verschoben werden?: ");
         int verschiebung = new Scanner(System.in).nextInt();
         System.out.println("Ohne Verschluesselung: " + satz);
-        char[] satzfertig = new char[satz.length()];
-        String satz2 = null;
+        char c3 = 0;
+        String stringbuilder = " ";
+        int i = 0;
+        while (i < satz.length()+1) {
+            char buchstabe = satz.charAt(i);
+            for (char c2 = 'A'; c2 <= 'z'; c2++) {
+                if (buchstabe == c2) {
+                    int ascii = (int) c2;
+                    int ceasar = ascii + verschiebung;
+                    for (int ascii2 = 65; ascii2 <= 122; ascii2++){
+                        if(ceasar == ascii2) {
+                            c3 = (char) ceasar;
+                            stringbuilder = satz.replace(buchstabe,c3);
+                            break;
+                        }
+                    }
+                }
+            }
+            i++;
+        }
 
-        System.out.println("Mit Verschluesselung: " + satz2);
+
+
+        /*
+        for (int i = 0; i < satz.length(); i++) {
+            char buchstabe = satz.charAt(i);
+            for (char c2 = 'A'; c2 <= 'z'; c2++) {
+                if (buchstabe == c2) {
+                    int ascii = (int) c2;
+                    int ceasar = ascii + verschiebung;
+                    for (int ascii2 = 65; ascii2 <= 122; ascii2++) {
+                        if (ceasar == ascii2) {
+                            c3 = (char) ceasar;
+                            stringbuilder = satz.replace(buchstabe,c3);
+                            break;
+                        }
+                    }
+                }
+            break;}
+        }
+        System.out.println(stringbuilder);
+         */
     }
 
     public static void main(String[] args) {

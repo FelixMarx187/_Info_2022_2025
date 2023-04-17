@@ -34,46 +34,16 @@ public class MainApp_A4 {
         System.out.println("Ohne Verschluesselung: " + satz);
         char c3 = 0;
         String stringbuilder = " ";
-        int i = 0;
-        while (i < satz.length()+1) {
-            char buchstabe = satz.charAt(i);
-            for (char c2 = 'A'; c2 <= 'z'; c2++) {
-                if (buchstabe == c2) {
-                    int ascii = (int) c2;
-                    int ceasar = ascii + verschiebung;
-                    for (int ascii2 = 65; ascii2 <= 122; ascii2++){
-                        if(ceasar == ascii2) {
-                            c3 = (char) ceasar;
-                            stringbuilder = satz.replace(buchstabe,c3);
-                            break;
-                        }
-                    }
-                }
-            }
-            i++;
-        }
 
-
-
-        /*
         for (int i = 0; i < satz.length(); i++) {
-            char buchstabe = satz.charAt(i);
-            for (char c2 = 'A'; c2 <= 'z'; c2++) {
-                if (buchstabe == c2) {
-                    int ascii = (int) c2;
-                    int ceasar = ascii + verschiebung;
-                    for (int ascii2 = 65; ascii2 <= 122; ascii2++) {
-                        if (ceasar == ascii2) {
-                            c3 = (char) ceasar;
-                            stringbuilder = satz.replace(buchstabe,c3);
-                            break;
-                        }
-                    }
-                }
-            break;}
+            char buchstabe =satz.charAt(i);
+            int ceasar = (int) buchstabe;
+            int ceasarverschiebung = ceasar + verschiebung;
+            char translate = (char) ceasarverschiebung;
+            stringbuilder += translate;
         }
         System.out.println(stringbuilder);
-         */
+
     }
 
     public static void main(String[] args) {

@@ -3,8 +3,8 @@ package _10_For_Schleifen._10_For_Schleifen_Vertiefung;
 public class MainApp_A2 {
     public static String fahrradcode(){
         int code1 = 9;
-        int code2 = 3;
-        int code3 = 5;
+        int code2 = 2;
+        int code3 = 8;
 
 
         int i;

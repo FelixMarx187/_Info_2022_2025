@@ -1,19 +1,13 @@
 package _10_For_Schleifen._10_For_Schleifen_Vertiefung;
 
 public class MainApp_A3 {
-    /*
-    es mit einem Großbuchstaben anfing,
-    danach im Wechsel immer eine Zahl und ein Kleinbuchstabe kam,
-    es insgesamt 8 Zeichen hatte
-    A-1-a-2-b-3-c-4
-     */
     public static void main(String[] args) {
         System.out.println("Alle Kombinationen ergeben zusammen 73.348.857.593.856 billionen Kombinationen. Rechnung: 26*(37^8)");
         System.out.println("Hier sind alle Kombinationen:");
-        System.out.println(allcombinations());
+        System.out.println(allekombinationen());
 
     }
-    public static String allcombinations(){
+    public static String allekombinationen(){
         String code = "";
         String uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String lowercase = "abcdefghijklmnopqrstuvwxyz";

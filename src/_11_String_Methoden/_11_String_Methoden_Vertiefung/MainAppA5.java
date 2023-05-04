@@ -9,12 +9,13 @@ public class MainAppA5 {
         String satz = scanner.nextLine();
         System.out.println("Schlüssel:");
         String schluessel = scanner.nextLine();
-        System.out.println(vigenere_chiffre(satz,schluessel));
-
+        System.out.println(schluesselAufLaengeBringen(satz, schluessel));
     }
-    public static String vigenere_chiffre(String pText, String pSchluessel) {
-        String verschluesselung = "";
-        verschluesselung = pText;
-        return verschluesselung;
+    public static String schluesselAufLaengeBringen(String pNachricht, String pSchluessel) {
+        String schluessel = "";
+        for (int i = 0; i < pNachricht.length(); i++) {
+            schluessel += (char) ((pSchluessel.charAt(i % pSchluessel.length())));
+        }
+        return schluessel;
     }
 }

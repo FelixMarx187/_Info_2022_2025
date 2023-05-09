@@ -105,7 +105,7 @@ public class MainApp_A2 {
                     x++;
                 }
                 double durchschnitt = temp2020 / 12;
-                System.out.println("Hier ist der Durchnitt für dein Kriterium:" + durchschnitt);
+                System.out.println("Hier ist der Durchschnitt für dein Kriterium:" + durchschnitt);
             } else if (jahr2 == 2021) {
                 System.out.println("Durchschnittswert berechnen | [0] Mittlere Temp. [C°] | [1] Minimum Temp. [C°] | [2] Maximum Temp. [C°] | [3] Niederschlag [l/m²] | [4] Regenreichster Tag [l/m²] ");
                 int auswahl3 = scanner.nextInt();

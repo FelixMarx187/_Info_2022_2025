@@ -2,7 +2,7 @@ package _11_String_Methoden._11_String_Methoden_Vertiefung;
 
 import java.util.Scanner;
 
-public class MainApp_A5_2 {
+public class MainApp_A5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Geben Sie den Text ein: ");

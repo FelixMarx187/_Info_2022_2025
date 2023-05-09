@@ -4,6 +4,20 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MainApp_A4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Satz:");
+        String eingabe = scanner.nextLine();
+        System.out.println("ASCII [1] / CAESAR [2]");
+        int input = scanner.nextInt();
+        if (input == 1) {
+            asciiverschluesselung(eingabe);
+        } else {
+            System.out.println("Verschiebung: ");
+            int verschiebung = scanner.nextInt();
+            caesarverschluesselung(eingabe, verschiebung);
+        }
+    }
     public static void asciiverschluesselung(String satz) {
         byte[] bytes = satz.getBytes(StandardCharsets.US_ASCII);
         System.out.println("Mit verschluesselung: " + Arrays.toString(bytes));
@@ -19,22 +33,5 @@ public class MainApp_A4 {
             output += translate;
         }
         System.out.println(output);
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Satz:");
-        String eingabe = scanner.nextLine();
-        System.out.println("ASCII [1] / CAESAR [2]");
-        int input = scanner.nextInt();
-        if (input == 1) {
-            asciiverschluesselung(eingabe);
-        } else {
-            System.out.println("Verschiebung: ");
-            int verschiebung = scanner.nextInt();
-            caesarverschluesselung(eingabe, verschiebung);
-
-        }
-
     }
 }

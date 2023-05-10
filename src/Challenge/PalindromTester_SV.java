@@ -63,20 +63,14 @@ public class PalindromTester_SV {
     }
 
     public static boolean istPalindrom_charAt(String pText) {
-        boolean istPlaindrom = true;
-        String Palindrom = pText.toUpperCase();
-        Palindrom = pText.replace(" ","");
-        int i = 0;
-        int j = Palindrom.length() - 1;
-        while (i < j) {
-            if (Palindrom.charAt(j) != Palindrom.charAt(i)) {
-                istPlaindrom = false;
-            } else {
-                istPlaindrom = true;
+        boolean istPalindrom = true;
+        pText = pText.toLowerCase();
+        pText = pText.replace(" ", "");
+            for (int i = 0; i < pText.length()/2; i++) {
+                if (pText.charAt(i) != pText.charAt(pText.length()-1-i)) {
+                    istPalindrom = false;
+                }
             }
-            i++;
-            j--;
-        }
-        return istPlaindrom;
+            return istPalindrom;
     }
 }

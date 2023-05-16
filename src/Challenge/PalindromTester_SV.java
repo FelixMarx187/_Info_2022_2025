@@ -63,14 +63,12 @@ public class PalindromTester_SV {
     }
 
     public static boolean istPalindrom_charAt(String pText) {
-        boolean istPalindrom = true;
-        pText = pText.toLowerCase();
-        pText = pText.replace(" ", "");
+        pText = pText.replace(" ", "").toLowerCase();
             for (int i = 0; i < pText.length()/2; i++) {
                 if (pText.charAt(i) != pText.charAt(pText.length()-1-i)) {
-                    istPalindrom = false;
+                    return false;
                 }
             }
-            return istPalindrom;
+            return true;
     }
 }

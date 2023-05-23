@@ -22,10 +22,6 @@ public class Main {
                 System.out.println("Kontonummer: " + konto.getKontoNummer());
                 System.out.println("Kontostand: " + konto.getKontoStand() + " €");
                 int counter = 0;
-                Konto[][] neuesKonto = new Konto[10][3];
-                String[] konto1 = {konto.getInhaber(), String.valueOf(konto.getKontoNummer()), String.valueOf(konto.getKontoStand())};
-
-
             }
         }
     }

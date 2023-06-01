@@ -1,24 +1,26 @@
 package _07_Arrays._07_Arrays_Vertiefung._07_Arrays_Vertiefung_Aufgabe_2;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class MainApp_2_11 {
     public static void main(String[] args) {
-        Random random = new Random();
-
         int[] arr = new int[100];
-        int i = 0;
-        int j = 0;
-        while (i < arr.length) {
-            arr[i] = random.nextInt(-50,50);
-            while (j < arr.length) {
-                if (arr[i] == arr[j]) {
-                    arr[j] = 0;
-                }
-                j++;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(-50,50);
+        }
+        System.out.println(Arrays.toString(arr));
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+
+        int nummerDavor = arr[0];
+        System.out.print(nummerDavor + " ");
+        for (int i = 1; i < arr.length; i++) {
+            int aktuelleNummer = arr[i];
+            if (aktuelleNummer != nummerDavor) {
+                System.out.print(aktuelleNummer + " ");
+                nummerDavor = aktuelleNummer;
             }
-            System.out.println(arr[i]);
-            i++;
         }
     }
 }

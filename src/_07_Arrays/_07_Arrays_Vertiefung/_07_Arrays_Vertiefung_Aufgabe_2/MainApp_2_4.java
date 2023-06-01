@@ -5,24 +5,16 @@ import java.util.Scanner;
 
 public class MainApp_2_4 {
     public static void main(String[] args) {
-        Random random = new Random();
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Geben sie einen Index an:");
+        System.out.print("Geben sie einen Index ein: ");
         if (!scanner.hasNextInt()) {
-            System.out.println("Fehler: Programm wird gestoppt");
+            System.out.println("Fehler: Programm wird gestopt");
         }
-            int input = scanner.nextInt();
-
+        int inp = scanner.nextInt();
         int[] arr = new int[100];
-        int counter = 0;
-
-        while (counter < arr.length) {
-            arr[counter] = random.nextInt(-50,50);
-            counter++;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = new Random().nextInt(-50,50);
         }
-        System.out.println(arr[input]);
-
-
+        System.out.println(arr[inp]);
     }
 }

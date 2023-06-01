@@ -1,0 +1,18 @@
+# Konzept Zeichnung
+-----------------------------------
+## Main
+    - User Interface mit angenehmen GUI
+    - User Input für Auswahl
+    - Programm läuft ewig
+    - zu weisung zu Login Register und Developer Settings
+## userLogin
+    - User gibt seine Kontonummer und Pin ein
+    - Kann geld einzahlen und abheben(max. 2000€) (Wenn kein Geld da geht auch nicht)
+    - User kann einen Darlehen an nehmen bis zu max 1000€
+## userRegister
+    - User bekommt seine Eigene Konto Nummer, Konto Pin und muss seinen Namen eintragen
+        [informationen werden in einem array gespeichert]
+    - Danach wird User auf die Main Page zurück geführt und kann sich einloggen.
+## Developer Settings
+    - Möglichkeit zum Abschalten des Programs
+    PS: Wenn einmal in den Developer Settings muss das Programm neugestartet werden

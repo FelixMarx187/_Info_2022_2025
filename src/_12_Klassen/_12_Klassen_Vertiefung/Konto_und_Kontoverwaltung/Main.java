@@ -31,6 +31,16 @@ public class Main {
     }
 
     public static void registerUser() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: ");
+        String pInhaber = scanner.nextLine();
+        Konto konto = new Konto();
+        konto.setInhaber(pInhaber);
+        System.out.println("-------------------- --------------------");
+        System.out.println("Name: " + konto.getInhaber());
+        System.out.println("Kontonummer: " + konto.getKontoNummer());
+        System.out.println("Kontostand: " + konto.getKontoStand() + "€");
+
 
     }
 

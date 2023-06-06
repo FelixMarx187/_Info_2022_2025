@@ -21,6 +21,5 @@ public class ArrayZusammenfügen {
         Arrays.sort(zusammen);
         System.out.println("-----------------------------------------");
         System.out.println(Arrays.toString(zusammen));
-
     }
 }

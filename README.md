@@ -3,5 +3,5 @@
 ```java
 public static void main(String[] args) {
   String token = new String;
-  token += "*******************************";
+  token += "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";
 }

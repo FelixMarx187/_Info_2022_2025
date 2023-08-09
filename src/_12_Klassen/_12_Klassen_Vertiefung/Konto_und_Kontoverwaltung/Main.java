@@ -27,10 +27,35 @@ public class Main {
         }
     }
     public static void loginUser() {
+        Scanner scanner = new Scanner(System.in);
+        Konto konto = new Konto();
+        System.out.println("Name: ");
+        String input = scanner.nextLine();
+        if (input == konto.getInhaber()) {
+            System.out.print("Kontonummer: ");
+            int input2 = new Scanner(System.in).nextInt();
+            if (input2 == konto.getKontoNummer()) {
+                System.out.print("Einzahlen: ");
+                int inputEinzahlen = new Scanner(System.in).nextInt();
 
+            }
+        }
     }
 
     public static void registerUser() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: ");
+        String pInhaber = scanner.nextLine();
+        int pInput = new Scanner(System.in).nextInt();
+        Konto konto = new Konto();
+        konto.setInhaber(pInhaber);
+        konto.setKontoStand(pInput);
+        konto.setKontoNummer();
+        System.out.println("-------------------- --------------------");
+        System.out.println("Name: " + konto.getInhaber());
+        System.out.println("Kontonummer: " + konto.getKontoNummer());
+        System.out.println("Kontostand: " + konto.getKontoStand() + "€");
+
 
     }
 

@@ -1,0 +1,10 @@
+Definiere eine Klasse Immobilie mit mindestens 5 sinnvollen Attributen (die auch nicht alle vom gleichen Datentyp sind). x
+Lege ein Array an, in dem du 20 Immobilien verwalten kannst. x
+Erzeuge 5 Objekte mit unterschiedlichen Immobilien und füge sie in das Array ein. x
+Gib alle Immobilien im Array aus - natürlich nur die, die nicht null sind. x
+Lagere den Code aus Aufgabe (4) in eine Funktion aus und rufe sie auf. x
+Frage den Benutzer, welche Immobilie (zwischen 0 und 14) er sich ansehen möchte und gib die Informationen dazu aus. x
+Frage den Benutzer, welche Immobilie (zwischen 0 und 14) aus der Liste gelöscht werden soll und gib die Liste erneut aus. x
+Zähle die Anzahl der Immobilien in deiner Liste (nur die, die nicht 0 sind). x
+Gib die Anzahl der noch freien Speicherplätze für Immobilien in deiner Liste aus. x
+Der Benutzer soll die Attribute für eine neue Immobilie eingeben. Füge diese an einem freien Speicherplatz ein.

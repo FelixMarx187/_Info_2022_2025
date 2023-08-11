@@ -1,0 +1,2 @@
+Wenn man die Objekte überschreibt so bleibt die Speicheradresse gleich.
+So wird Politiker[0] zu p0 und die Speicheradresse bleibt gleich.

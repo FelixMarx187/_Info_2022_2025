@@ -1,0 +1,5 @@
+    Name des Spiels - String
+    Entwickler - String
+    Preis - double
+    FSK - int
+    Spiele-Kategorie String

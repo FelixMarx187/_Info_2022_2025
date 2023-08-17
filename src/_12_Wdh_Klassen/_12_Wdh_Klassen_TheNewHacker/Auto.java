@@ -1,4 +1,4 @@
-package _12_Wdh_Klassen_TheNewHacker;
+package _12_Wdh_Klassen._12_Wdh_Klassen_TheNewHacker;
 
 public class Auto {
     public String modell;

@@ -1,6 +1,6 @@
-package _12_Wdh_Klassen_TheNewHacker;
+package _12_Wdh_Klassen._12_Wdh_Klassen_TheNewHacker;
 
-public class Auto1 {
+public class Auto3 {
     /* Brauch man net
     public String modell;
     public String hersteller;

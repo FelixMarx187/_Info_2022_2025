@@ -17,11 +17,11 @@ public class MainApp {
     }
 
     public static Fundbuero[] selberFidner(String pFundstueck, int pPreis) {
-        int lastidx = -1;
         for (int i = 0; i < fundstueckeListe.length; i++) {
             if (fundstueckeListe[i] == null) {
                 Fundbuero i2 = new Fundbuero(pFundstueck, fundstueckeListe[i - 1].Fundort, fundstueckeListe[i - 1].Datum, fundstueckeListe[i - 1].finderName, fundstueckeListe[i - 1].finderAdresse, pPreis);
                 fundstueckeListe[i] = i2;
+                break;
             }
         }
         return fundstueckeListe;
@@ -31,6 +31,8 @@ public class MainApp {
         for (int i = 0; i < fundstueckeListe.length; i++) {
             if (fundstueckeListe[i] == null) {
                 Fundbuero i2 = new Fundbuero(pFundstueck, pFundort, pDatum, "Anonym", "Anonym", pPreis);
+                fundstueckeListe[i] = i2;
+                break;
             }
         }
         return fundstueckeListe;

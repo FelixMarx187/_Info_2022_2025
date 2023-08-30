@@ -3,6 +3,15 @@ package _14_Methoden_Konstruktoren._14_Methoden_Konstruktoren_Team_Wuerfel;
 import java.util.Random;
 
 public class Team {
+    private String[] spieler;
+    private String name;
+    private int[] wuerfel;
+
+    public void Team(String[] pSpieler, String pName, int[] pWuerfel) {
+        this.name = pName;
+        this.spieler = pSpieler;
+        this.wuerfel = pWuerfel;
+    }
     public static  void add_spieler(String[] pSpieler, String pName) {
         boolean ok = false;
         for (int i = 0; i < pSpieler.length; i++) {

@@ -31,9 +31,8 @@ public class Lebensmittel {
     private Naehrwerte naehrwerte;
     private boolean istGesund;
 
-    public Lebensmittel[] lebensmittelsErzeugen() {
+    public Lebensmittel[] lebensmittelsErzeugen(Lebensmittel[] lebensmittel) {
         Scanner scanner = new Scanner(System.in);
-        Lebensmittel[] lebensmittel = new Lebensmittel[100];
         Naehrwerte[] naehrwertes = new Naehrwerte[100];
         Lebensmittel lebensmittel1 = new Lebensmittel();
         Naehrwerte naehrwerte = new Naehrwerte();
@@ -42,7 +41,6 @@ public class Lebensmittel {
                 System.out.println("Lebensmittel erzeugen");
                 System.out.print("Name: ");
                 lebensmittel1.setName(scanner.nextLine());
-                scanner.nextLine();
                 System.out.print("Kilokalorien: ");
                 naehrwerte.setKilokalorien(scanner.nextInt());
                 scanner.nextLine();
@@ -59,6 +57,7 @@ public class Lebensmittel {
                 naehrwertes[i] = naehrwerte;
                 lebensmittel1.setNaehrwerte(naehrwertes[i]);
                 lebensmittel[i] = lebensmittel1;
+                break;
             }
         }
         return lebensmittel;

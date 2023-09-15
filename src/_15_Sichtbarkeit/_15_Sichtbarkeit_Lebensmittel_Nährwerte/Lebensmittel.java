@@ -11,10 +11,6 @@ public class Lebensmittel {
         this.name = name;
     }
 
-    public Naehrwerte getNaehrwerte() {
-        return naehrwerte;
-    }
-
     public void setNaehrwerte(Naehrwerte naehrwerte) {
         this.naehrwerte = naehrwerte;
     }
@@ -66,12 +62,12 @@ public class Lebensmittel {
     public void lebensmittelAusgeben(Lebensmittel[] pArray) {
         Naehrwerte s1 = new Naehrwerte();
         for (Lebensmittel s : pArray) {
-            if (s != null) {
-                System.out.println("Lebensmittel: " + s.getName() + "\nKilokalorien: " + s1.getKilokalorien() + "\nFett: " + s1.getFett() + "\nKohlenhydrate: " + s1.getKohlenhydrate() + "\nEiweiß: " + s1.getEiweiss() + "\nist Gesund: " + s.isIstGesund());
-            } else {
-                System.out.println("Liste Ende");
-                break;
-            }
+
+            System.out.println("Lebensmittel: " + s.getName() + "\nKilokalorien: " + s1.getKilokalorien() + "\nFett: " + s1.getFett() + "\nKohlenhydrate: " + s1.getKohlenhydrate() + "\nEiweiß: " + s1.getEiweiss() + "\nist Gesund: " + s.isIstGesund());
+
+            System.out.println("Liste Ende");
+            break;
+
         }
     }
 }

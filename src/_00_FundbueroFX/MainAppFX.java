@@ -18,7 +18,7 @@ public class MainAppFX extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStag) {
         this.primaryStage = primaryStage;
         primaryStage.setTitle("Fundbüro");
 

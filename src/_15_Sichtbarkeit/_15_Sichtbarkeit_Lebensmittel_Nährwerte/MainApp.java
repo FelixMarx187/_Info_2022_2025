@@ -13,7 +13,7 @@ public class MainApp {
             if (input == 1) {
                 lebensmittel.lebensmittelsErzeugen(lebensmittels);
             } else if (input == 2) {
-                lebensmittel.lebensmittelAusgeben(lebensmittel.lebensmittelsErzeugen(lebensmittels));
+                lebensmittel.lebensmittelAusgeben(lebensmittels);
 
             }
         }

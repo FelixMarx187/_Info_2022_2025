@@ -21,19 +21,23 @@ public class Konto {
         return kontoStand;
     }
 
-    public boolean isStandardVertrag() {
-        return standardVertrag;
-    }
-
     public boolean isGesperrt() {
         return gesperrt;
     }
 
     private int alter;
     private int kontoNummer;
+
+    public void setKontoNummer(int kontoNummer) {
+        this.kontoNummer = kontoNummer;
+    }
+
+    public void setKontoStand(int kontoStand) {
+        this.kontoStand = kontoStand;
+    }
+
     private int kontoStand;
-    private boolean standardVertrag;
-    private boolean gesperrt;
+    private boolean gesperrt = false;
 
     public Konto(String pInhaber,int pAlter) {
         StandardVertrag standardVertrag = new StandardVertrag();
@@ -41,14 +45,10 @@ public class Konto {
         this.inhaber = pInhaber;
         this.alter = pAlter;
         if (pAlter < 18) {
-            this.standardVertrag = false;
             standardVertrag.juniorVertrag();
         } else {
-            this.standardVertrag = true;
             standardVertrag.standardVertrag();
         }
-        this.kontoNummer = random.nextInt(10000000,100000000);
-        this.kontoStand = 0;
         this.gesperrt = false;
     }
 }

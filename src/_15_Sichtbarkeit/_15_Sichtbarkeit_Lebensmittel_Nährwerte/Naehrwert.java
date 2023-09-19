@@ -1,6 +1,6 @@
 package _15_Sichtbarkeit._15_Sichtbarkeit_Lebensmittel_Nährwerte;
 
-public class Naehrwerte {
+public class Naehrwert {
     public int getKilokalorien() {
         return kilokalorien;
     }
@@ -37,5 +37,4 @@ public class Naehrwerte {
     private double fett;
     private double kohlenhydrate;
     private double Eiweiss;
-
 }

@@ -56,8 +56,7 @@ public class MainApp{
                 System.out.print(" |");
                 KontoVerwaltung kontoVerwaltung = new KontoVerwaltung();
                 kontoVerwaltung.kontoLogin(konto, kontoArray, kontonummer);
-
-
+                System.out.println("Test");
             }
 
 

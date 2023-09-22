@@ -27,7 +27,7 @@ public class MainApp{
                         kontoArray[i] = konto;
                     }
                 }
-                StandardVertrag standardVertrag = new StandardVertrag();
+                //StandardVertrag standardVertrag = new StandardVertrag();
                 //Benutzerdaten Ausgabe
                 System.out.println("_________________________________________");
                 System.out.println("Name: " + konto.getInhaber());
@@ -36,27 +36,21 @@ public class MainApp{
                 System.out.println("Kontostand: " + konto.getKontoStand());
                 //Welcher Vertrag wird hinzugefügt
                 if (input < 18) {
-                    standardVertrag.juniorVertrag();
-                    System.out.println("Konto Vertrag: " + standardVertrag.getName());
-                } else {
-                    standardVertrag.standardVertrag();
-                    System.out.println("Konto Vertrag: " + standardVertrag.getName());
                 }
                 //Vertrags Details
-                System.out.println("  - Kontoführungsgebühren: " + standardVertrag.getKontofuehrungsgebuehren());
+                /*System.out.println("  - Kontoführungsgebühren: " + standardVertrag.getKontofuehrungsgebuehren());
                 System.out.println("  - Guthaben Zinsen: " + standardVertrag.getGuthabenZinsen());
                 System.out.println("  - Darlehen Zinsen: " + standardVertrag.getDarlehenZinsen());
                 System.out.println("  - max Darlehens Summe: " + standardVertrag.getMaxDarlehensSumme());
                 System.out.println("  - max Abhebebetrag: " + standardVertrag.getMaxAbhebebetrag());
                 System.out.println("  - ist gesperrt: " + konto.isGesperrt());
+                 */
             } else if (input1 == 2) {
                 System.out.println("| Konto Login |");
                 System.out.print("| Kontonummer: ");
                 int kontonummer = new Scanner(System.in).nextInt();
                 System.out.print(" |");
                 KontoVerwaltung kontoVerwaltung = new KontoVerwaltung();
-                kontoVerwaltung.kontoLogin(konto, kontoArray, kontonummer);
-                System.out.println("Test");
             }
 
 

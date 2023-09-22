@@ -5,8 +5,11 @@ public class StandardVertrag {
     private int kontofuehrungsgebuehren;
     private double guthabenZinsen;
     private int darlehenZinsen;
-    private int maxDarlehensSumme;
-    private int maxAbhebebetrag;
+    private double maxDarlehensSumme;
+    private double maxAbhebebetrag;
+    public StandardVertrag(String pName, int pKontofuehrungsgebueren, double pGuthabenZinsen, double pDarlehenZinsen, double pMaxDarlehensSumme, double pMaxAbhebebetrat){
+
+    }
 
     public String getName() {
         return name;
@@ -24,29 +27,12 @@ public class StandardVertrag {
         return darlehenZinsen;
     }
 
-    public int getMaxDarlehensSumme() {
+    public double getMaxDarlehensSumme() {
         return maxDarlehensSumme;
     }
 
-    public int getMaxAbhebebetrag() {
+    public double getMaxAbhebebetrag() {
         return maxAbhebebetrag;
     }
 
-    public void standardVertrag(){
-        this.name = "Standard Vertrag";
-        this.kontofuehrungsgebuehren = 5;
-        this.guthabenZinsen = 0.5;
-        this.darlehenZinsen = 10;
-        this.maxDarlehensSumme = 1000;
-        this.maxAbhebebetrag = 2000;
-    }
-
-    public void juniorVertrag(){
-        this.name = "Junior Vertrag";
-        this.kontofuehrungsgebuehren = 0;
-        this.guthabenZinsen = 1.5;
-        this.darlehenZinsen = 0;
-        this.maxDarlehensSumme = 0;
-        this.maxAbhebebetrag = 500;
-    }
 }

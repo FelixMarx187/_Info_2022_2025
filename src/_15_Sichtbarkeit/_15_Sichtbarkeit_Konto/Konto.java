@@ -40,14 +40,14 @@ public class Konto {
     private boolean gesperrt = false;
 
     public Konto(String pInhaber,int pAlter) {
-        StandardVertrag standardVertrag = new StandardVertrag();
+        //StandardVertrag standardVertrag = new StandardVertrag();
         Random random = new Random();
         this.inhaber = pInhaber;
         this.alter = pAlter;
         if (pAlter < 18) {
-            standardVertrag.juniorVertrag();
+            //standardVertrag.juniorVertrag();
         } else {
-            standardVertrag.standardVertrag();
+            //standardVertrag.standardVertrag();
         }
         this.gesperrt = false;
     }

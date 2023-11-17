@@ -1,12 +1,14 @@
+package LineareDatenstruktur;
+
 /**
  * <p>
  * Materialien zu den zentralen NRW-Abiturpruefungen im Fach Informatik ab 2018
  * </p>
  * <p>
- * Generische Klasse Queue<ContentType>
+ * Generische Klasse LineareDatenstruktur.Queue<ContentType>
  * </p>
  * <p>
- * Objekte der generischen Klasse Queue (Warteschlange) verwalten beliebige
+ * Objekte der generischen Klasse LineareDatenstruktur.Queue (Warteschlange) verwalten beliebige
  * Objekte vom Typ ContentType nach dem First-In-First-Out-Prinzip, d.h., das
  * zuerst abgelegte Objekt wird als erstes wieder entnommen. Alle Methoden haben
  * eine konstante Laufzeit, unabhaengig von der Anzahl der verwalteten Objekte.

@@ -12,11 +12,11 @@ public class MainApp {
 
         System.out.println("Fishmac Stack");
         System.out.println("-------------------------------");
-        StackAusgeben(meinFishmac, copyFishmac);
-        CopyStackUeberpruefen(copyFishmac); //erklärung für diese Methode im Anhang zur Abgabe
+        new MainApp().StackAusgeben(meinFishmac,copyFishmac);
+
     }
 
-    public static <Fishmac> void StackAusgeben(Stack<Fishmac> meinFishmac, Stack<Fishmac> copyFishmac) {
+    public <Fishmac> void StackAusgeben(Stack<Fishmac> meinFishmac, Stack<Fishmac> copyFishmac) {
         while (meinFishmac.top() != null) {
             copyFishmac.push(meinFishmac.top());
             System.out.println(meinFishmac.top().toString());
@@ -24,17 +24,8 @@ public class MainApp {
             System.out.println("-------------------------------");
             meinFishmac.pop();
         }
-    }
-
-    public static <Fishmac> void CopyStackUeberpruefen(Stack<Fishmac> copyFishmac) {
-        System.out.println(" ");
-        System.out.println(" ");
-        System.out.println("CopyFishmac Stack");
-        System.out.println("-------------------------------");
         while (copyFishmac.top() != null) {
-            System.out.println(copyFishmac.top().toString());
-            System.out.println("-------------------------------");
-            copyFishmac.pop();
+            meinFishmac.push(copyFishmac.top());
         }
     }
 }

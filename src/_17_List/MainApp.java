@@ -35,7 +35,7 @@ public class MainApp {
     }
 
     public static void listeSumme(List<Integer> pListe) {
-        int temp = 0;
+        int temp = -1;
         pListe.toFirst();
         while (pListe.getContent() != null) {
             temp += pListe.getContent();

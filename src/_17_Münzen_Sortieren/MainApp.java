@@ -1,7 +1,7 @@
 package _17_Münzen_Sortieren;
 
-import LineareDatenstruktur.List
-import LineareDatenstruktur.Stack
+import LineareDatenstruktur.List;
+import LineareDatenstruktur.Stack;
 
 import java.util.Random;
 

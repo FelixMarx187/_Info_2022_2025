@@ -1,5 +1,7 @@
 package _17_Stapel;
 
+import LineareDatenstruktur.Stack;
+
 public class MainApp {
     public static void main(String[] args) {
 

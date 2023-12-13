@@ -1,14 +1,14 @@
-package _17_Stapel;
+package LineareDatenstruktur;
 
 /**
  * <p>
  * Materialien zu den zentralen NRW-Abiturpruefungen im Fach Informatik ab 2018
  * </p>
  * <p>
- * Generische Klasse _17_Stapel.Stack<ContentType>
+ * Generische Klasse LineareDatenstruktur.Stack<ContentType>
  * </p>
  * <p>
- * Objekte der generischen Klasse _17_Stapel.Stack (Keller, Stapel) verwalten beliebige
+ * Objekte der generischen Klasse LineareDatenstruktur.Stack (Keller, Stapel) verwalten beliebige
  * Objekte vom Typ ContentType nach dem Last-In-First-Out-Prinzip, d.h., das
  * zuletzt abgelegte Objekt wird als erstes wieder entnommen. Alle Methoden
  * haben eine konstante Laufzeit, unabhaengig von der Anzahl der verwalteten
@@ -116,7 +116,7 @@ public class Stack<ContentType> {
    * unveraendert. Falls der Stapel leer ist, wird null zurueckgegeben.
    * 
    * @return das oberste Stackelement vom Typ ContentType oder null, falls
-   *         der _17_Stapel.Stack leer ist
+   *         der LineareDatenstruktur.Stack leer ist
    */
   public ContentType top() {
     if (!this.isEmpty()) {

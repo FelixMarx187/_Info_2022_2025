@@ -1,5 +1,7 @@
 package _C01_Binary_Tree;
+
 import nichtLineareDatenstruktur.BinaryTree;
+import BaeumeBeispiel.MorseCode_BinaryTree;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -15,18 +17,37 @@ public class MainApp {
         BinaryTree<Integer> wurzel = new BinaryTree<>(12, l, r);
         MainApp mainApp = new MainApp();
         System.out.println("Dein Baum hat "+mainApp.ebenenZaehlen(wurzel)+ " Ebenen! :) XD");
-    }
-    public int ebenenZaehlen(BinaryTree<Integer> pBaum) {
-        int counter = 0;
-        if (pBaum.getContent() == null) {
-            return counter;
-        } else {
-            ebenenZaehlen(pBaum.getLeftTree());
-            counter++;
-            ebenenZaehlen(pBaum.getRightTree());
-            counter++;
 
-            return counter + 1; // Die "1" steht für die Wurzel
+        MorseCode_BinaryTree morseCode_binaryTree = new MorseCode_BinaryTree();
+        System.out.println("Dein Baum hat " + mainApp.ebenenZaehlenString(morseCode_binaryTree.wurzel) + " Ebenen! :) XD");
+
+    }
+
+    public int ebenenZaehlen(BinaryTree<Integer> pBaum) {
+        if (pBaum == null) {
+            return -1;
+        } else {
+            int linkerTeilbaum = ebenenZaehlen(pBaum.getLeftTree());
+            int rechterTeilbaum = ebenenZaehlen(pBaum.getRightTree());
+            if (linkerTeilbaum > rechterTeilbaum) {
+                return linkerTeilbaum + 1;
+            } else {
+                return rechterTeilbaum + 1;
+            }
+        }
+    }
+
+    public int ebenenZaehlenString(BinaryTree<String> pBaum) {
+        if (pBaum == null) {
+            return -1;
+        } else {
+            int linkerTeilbaum = ebenenZaehlenString(pBaum.getLeftTree());
+            int rechterTeilbaum = ebenenZaehlenString(pBaum.getRightTree());
+            if (linkerTeilbaum > rechterTeilbaum) {
+                return linkerTeilbaum + 1;
+            } else {
+                return rechterTeilbaum + 1;
+            }
         }
     }
 }

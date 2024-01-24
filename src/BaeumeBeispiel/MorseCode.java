@@ -71,7 +71,28 @@ public class MorseCode {
         System.out.println(klartext);
         return klartext;
     }
-    public static void ebenenZaehlen(BinaryTree<String> baum) {
-        
+
+    private static void inorder_ausgeben(BinaryTree<Integer> pBaum) {
+        if (pBaum != null && !pBaum.isEmpty()) {
+            inorder_ausgeben(pBaum.getLeftTree());
+            System.out.print(pBaum.getContent() + " | ");
+            inorder_ausgeben(pBaum.getRightTree());
+        }
+    }
+
+    private static void preorder_ausgeben(BinaryTree<Integer> pBaum) {
+        if (pBaum != null && !pBaum.isEmpty()) {
+            System.out.print(pBaum.getContent() + " | ");
+            inorder_ausgeben(pBaum.getLeftTree());
+            inorder_ausgeben(pBaum.getRightTree());
+        }
+    }
+
+    private static void postorder_ausgeben(BinaryTree<Integer> pBaum) {
+        if (pBaum != null && !pBaum.isEmpty()) {
+            inorder_ausgeben(pBaum.getLeftTree());
+            inorder_ausgeben(pBaum.getRightTree());
+            System.out.print(pBaum.getContent() + " | ");
+        }
     }
 }

@@ -14,7 +14,7 @@ public class MainApp {
 
         BinaryTree<Integer> wurzel = new BinaryTree<>(12, l, r);
         MainApp mainApp = new MainApp();
-        System.out.println(mainApp.ebenenZaehlen(wurzel));
+        System.out.println("Dein Baum hat "+mainApp.ebenenZaehlen(wurzel)+ " Ebenen! :) XD");
     }
     public int ebenenZaehlen(BinaryTree<Integer> pBaum) {
         int counter = 0;

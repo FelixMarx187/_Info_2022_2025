@@ -47,7 +47,7 @@ public class Controller {
         String vorname = tf_vorname.getText();
         String name = tf_name.getText();
         String geburtstag = tf_geb.getText();
-        ObservableList<String> daten = FXCollections.observableList(vorname,name,geburtstag);
+        //ObservableList<String> daten = FXCollections.observableList(vorname,name,geburtstag);
 
         tabelle.getItems().addAll(vorname,name,geburtstag);
     }

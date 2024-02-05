@@ -40,7 +40,7 @@ public class InsertSearchRemove {
                     System.out.println("Geburtstag");
                     int alter3 = new Scanner(System.in).nextInt();
                     Person person3 = new Person(vorname3,name3,alter3);
-                    MainApp.remove(person3);
+                    MainApp.removeBaum(person3);
                     break;
             }
         }
@@ -52,7 +52,8 @@ public class InsertSearchRemove {
         }
         return "Name gefunden: " + personBinarySearchTree.search(pPerson).getVorname() + " "+ personBinarySearchTree.search(pPerson).getName() + " " + personBinarySearchTree.search(pPerson).getAlter();
     }
-    public void remove(Person person) {
-
+    public void removeBaum(Person pPerson) {
+        personBinarySearchTree.remove(pPerson);
+        System.out.println("Person gelöscht");
     }
 }

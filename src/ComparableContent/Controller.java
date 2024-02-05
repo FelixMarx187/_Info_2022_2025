@@ -1,5 +1,6 @@
 package ComparableContent;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
@@ -66,5 +67,8 @@ public class Controller {
     private void inputFelderEinlesen() {
         s1 = new Schueler(tfInput1.getText());
         s2 = new Schueler(tfInput2.getText());
+    }
+
+    public void addToTable(ActionEvent actionEvent) {
     }
 }

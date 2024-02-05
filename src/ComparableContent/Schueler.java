@@ -11,19 +11,16 @@ public class Schueler implements ComparableContent<Schueler> {
 
     @Override
     public boolean isGreater(Schueler pContent) {
-        if (this.name.compareTo(pContent.name) > 0) {return true;}
-        return false;
+        return this.name.compareTo(pContent.name) > 0;
     }
 
     @Override
     public boolean isEqual(Schueler pContent) {
-        if (this.name.compareTo(pContent.name) == 0){return true;}
-        return false;
+        return this.name.compareTo(pContent.name) == 0;
     }
 
     @Override
     public boolean isLess(Schueler pContent) {
-        if (this.name.compareTo(pContent.name) < 0) {return true;}
-        return false;
+        return this.name.compareTo(pContent.name) < 0;
     }
 }

@@ -1,7 +1,7 @@
-package Challenge.ZahlenSuchen;
+//package Challenge.ZahlenSuchen;
 
-import Challenge.ZahlenSuchen.Vorlage;
-import nichtLineareDatenstruktur.BinarySearchTree;
+//import Challenge.ZahlenSuchen.Vorlage;
+//import nichtLineareDatenstruktur.BinarySearchTree;
 
 import java.util.Scanner;
 

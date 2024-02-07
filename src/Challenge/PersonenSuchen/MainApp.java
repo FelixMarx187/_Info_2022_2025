@@ -1,6 +1,6 @@
-//package Challenge.PersonenSuchen;
+package Challenge.PersonenSuchen;
 
-//import nichtLineareDatenstruktur.BinarySearchTree;
+import nichtLineareDatenstruktur.BinarySearchTree;
 
 import java.util.Scanner;
 

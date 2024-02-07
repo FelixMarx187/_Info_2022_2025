@@ -48,7 +48,7 @@ public class InsertSearchRemove {
     public void insertBaum(Person pContent) {
         if (pContent != null){
             if (personBinarySearchTree.isEmpty()) {
-                this.personBinarySearchTree = new BinarySearchTree<>(pContent);
+                //this.personBinarySearchTree = new BinarySearchTree<>(pContent);
             }
         }
     }

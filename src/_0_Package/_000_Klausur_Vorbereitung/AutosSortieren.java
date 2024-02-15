@@ -1,6 +1,4 @@
-package _000_Klausur_Vorbereitung;
-
-import java.util.Arrays;
+package _0_Package._000_Klausur_Vorbereitung;
 
 public class AutosSortieren {
     public static void main(String[] args) {

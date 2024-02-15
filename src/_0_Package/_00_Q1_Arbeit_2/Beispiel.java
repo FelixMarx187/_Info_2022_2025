@@ -1,4 +1,4 @@
-package _00_Q1_Arbeit_2;
+package _0_Package._00_Q1_Arbeit_2;
 
 public class Beispiel {
     private String Name;

@@ -1,4 +1,4 @@
-package _00_PasswortGenerator;
+package _0_Package._00_PasswortGenerator;
 
 import java.security.SecureRandom;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package _000_Klausur_Vorbereitung;
+package _0_Package._000_Klausur_Vorbereitung;
 
 import java.util.Arrays;
 

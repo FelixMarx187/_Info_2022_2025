@@ -1,4 +1,4 @@
-package BaeumeBeispiel;
+package _C01_Binary_Tree.BaeumeBeispiel;
 
 import nichtLineareDatenstruktur.BinaryTree;
 

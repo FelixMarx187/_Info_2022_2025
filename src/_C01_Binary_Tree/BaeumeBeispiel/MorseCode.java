@@ -1,10 +1,6 @@
-package BaeumeBeispiel;
+package _C01_Binary_Tree.BaeumeBeispiel;
 
-import jdk.jfr.ContentType;
 import nichtLineareDatenstruktur.BinaryTree;
-import nichtLineareDatenstruktur.BaumAusgeben;
-
-import java.util.Scanner;
 
 public class MorseCode {
 

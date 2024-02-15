@@ -1,4 +1,4 @@
-package _00_FundbueroFX;
+package _0_Package._00_FundbueroFX;
 
 public class Fundbuero {
     public static String Fundstueck;

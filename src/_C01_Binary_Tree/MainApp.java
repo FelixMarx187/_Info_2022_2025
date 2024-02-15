@@ -1,7 +1,7 @@
 package _C01_Binary_Tree;
 
 import nichtLineareDatenstruktur.BinaryTree;
-import BaeumeBeispiel.MorseCode_BinaryTree;
+import _C01_Binary_Tree.BaeumeBeispiel.MorseCode_BinaryTree;
 
 public class MainApp {
     public static void main(String[] args) {

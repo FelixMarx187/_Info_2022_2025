@@ -1,4 +1,4 @@
-package _0_Facharbeit;
+package _0_Package._0_Facharbeit;
 
 import java.util.function.IntFunction;
 

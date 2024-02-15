@@ -1,11 +1,12 @@
 package _C01_Binary_Tree.InsertSearchRemove;
 
 import nichtLineareDatenstruktur.BinarySearchTree;
+import nichtLineareDatenstruktur.BinaryTree;
 
 import java.util.Scanner;
 
 public class InsertSearchRemove {
-    static BinarySearchTree<Person> personBinarySearchTree = new BinarySearchTree<>();
+    public static BinarySearchTree<Person> personBinarySearchTree;
     public static void main(String[] args) {
         InsertSearchRemove MainApp = new InsertSearchRemove();
         boolean run = true;
@@ -45,14 +46,6 @@ public class InsertSearchRemove {
             }
         }
     }
-    public void insertBaum(Person pContent) {
-        if (pContent != null){
-            if (personBinarySearchTree.isEmpty()) {
-                this.personBinarySearchTree = new BinarySearchTree<>(pContent);
-            }
-        }
-    }
-
     public String searchBaum(Person pPerson) {
         if (personBinarySearchTree.search(pPerson) == null) {
             return "Keine Person gefunden!";

@@ -10,8 +10,7 @@ import java.util.Random;
 public class MainApp implements Vorlage {
     private static BinarySearchTree<Zahl> zahlBST = new BinarySearchTree<>();
     private static int[] werte = {5, 2, 7, 3, 4, 6, 8, 1, 9};
-    public static List<Zahl> zahlList = new List<>();
-    public static Queue<Zahl> zahlQueue = new Queue<>();
+
 
     @Override
     public BinarySearchTree<Zahl> fuelleBST() {
@@ -32,10 +31,16 @@ public class MainApp implements Vorlage {
     @Override
     public List<Zahl> levelOrder(BinarySearchTree<Zahl> pBaum) {
         //Binärbaum in die Queue
-        for (int i = 0; i < tiefe(zahlBST); i++) {
-            levelOrderTraversal(pBaum, i);
+        List<Zahl> zahlList = new List<>();
+        Queue<BinarySearchTree<Zahl>> zahlQueue = new Queue<>();
+        zahlQueue.enqueue(pBaum);
+        while (!zahlQueue.isEmpty()) {
+            zahlList.append(zahlQueue.front().getContent());
+            zahlQueue.enqueue(zahlQueue.front().getLeftTree());
+            zahlQueue.enqueue(zahlQueue.front().getRightTree());
+            zahlQueue.dequeue();
         }
-        //Queue in Liste
+
         return zahlList;
     }
 
@@ -54,26 +59,6 @@ public class MainApp implements Vorlage {
         mainApp.druckeListe(mainApp.levelOrder(mainApp.fuelleBST()));
     }
 
-    public static int tiefe(BinarySearchTree<Zahl> pBaum) {
-        if (pBaum.isEmpty()) {
-            return 0;
-        } else {
-            int tiefeLinks = tiefe(pBaum.getLeftTree());
-            int tiefeRechts = tiefe(pBaum.getRightTree());
-            return Math.max(tiefeLinks,tiefeRechts) + 2;
-        }
-    }
-    public static List<Zahl> levelOrderTraversal(BinarySearchTree<Zahl> pBST, int h) {
-        if (pBST.isEmpty()) {
-            return zahlList;
-        } else if (h == 1) {
-            zahlList.append(pBST.getContent());
-        } else if (h > 1) {
-            levelOrderTraversal(pBST.getLeftTree(),h-1);
-            levelOrderTraversal(pBST.getRightTree(),h-1);
-        }
-        return zahlList;
-    }
 }
 
 

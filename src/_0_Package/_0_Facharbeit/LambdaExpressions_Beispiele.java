@@ -1,16 +1,18 @@
 package _0_Package._0_Facharbeit;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.IntFunction;
+import java.util.stream.Collectors;
 
 public class LambdaExpressions_Beispiele {
     public static void main(String[] args) {
-        Runnable runnable = () -> System.out.println("Hello World");
-        System.out.println(runnable);
+        List<String> namen = Arrays.asList("Michael","Felix","Johannes","Mario","Marie");
 
-        IntFunction<Integer> integerIntFunction = (int a) -> a * a;
+        List<Integer> namenLänge = namen.stream()
+                .map(name -> name.length())
+                .collect(Collectors.toList());
 
-        System.out.println(integerIntFunction.apply(3));
-        System.out.println(integerIntFunction.toString());
-
+        System.out.println(namenLänge);
     }
 }

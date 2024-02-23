@@ -23,7 +23,6 @@ public class Controller {
 
     @FXML
     private TableView<String> tabelle;
-
     @FXML
     private TableColumn<String, ?> tc_geb;
 

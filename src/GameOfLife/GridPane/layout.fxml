@@ -4,8 +4,9 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
 
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameOfLife.GridPane.Controller">
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameOfLife.GridPane.Controller">
    <children>
       <GridPane fx:id="gridPane" gridLinesVisible="true" hgap="1.0" layoutX="16.0" layoutY="18.0" onMouseClicked="#clicked" prefHeight="400.0" prefWidth="400.0" vgap="1.0">
         <columnConstraints>
@@ -20,6 +21,10 @@
             <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
         </rowConstraints>
+         <children>
+            <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" height="100.0" onMouseClicked="#clicked" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" onMouseClicked="#clicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" />
+         </children>
       </GridPane>
    </children>
 </AnchorPane>

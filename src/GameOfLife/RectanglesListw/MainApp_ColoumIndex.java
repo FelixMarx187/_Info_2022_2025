@@ -1,10 +1,13 @@
 package GameOfLife.RectanglesListw;
 
+import LineareDatenstruktur.List;
 import javafx.application.Application;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
@@ -12,16 +15,22 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 public class MainApp_ColoumIndex extends Application {
+    private List<Rectangle> rectangleList = new List<>();
 
     @Override
     public void start(Stage primaryStage) {
+        HBox hBox = new HBox();
         VBox root = new VBox();
         GridPane gridPane = new GridPane();
+        Button button = new Button("Press Me");
+        hBox.getChildren().add(button);
+        root.getChildren().add(hBox);
         int rows = 20;
         int cols = 20;
         fillGridPane(gridPane, rows, cols);
         for (Node node : gridPane.getChildren()) {
             Rectangle rect = (Rectangle) node;
+            rectangleList.append(rect);
             setDifferentColors(rect);
         }
 
@@ -64,7 +73,11 @@ public class MainApp_ColoumIndex extends Application {
         int random = (int) (Math.random() * col1.length);
         pRect.setFill(col1[random]);
     }
+    private void writeIntoList(Rectangle rectangle) {
+        rectangleList.toFirst();
+        rectangleList.append(rectangle);
 
+    }
 
     private Node getNodeFromGridPane(GridPane gridPane, int col, int row) {
         for (Node node : gridPane.getChildren()) {

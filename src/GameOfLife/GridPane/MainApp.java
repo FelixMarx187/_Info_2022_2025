@@ -18,6 +18,7 @@ public class MainApp extends Application {
         Scene scene = new Scene(rootNode);
         primaryStage.setScene(scene);
         primaryStage.show();
+        //HALLO
     }
 
     public static void main(String[] args) {
